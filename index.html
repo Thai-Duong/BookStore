@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookStore</title>
+    <!-- File css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo"
+        ><i class="fa-solid fa-store"></i> BookStore</a
+      >
+      <nav class="header__navbar">
+        <div class="close-btn fa-solid fa-xmark"></div>
+        <a href="index.html">Trang Chủ</a>
+        <a href="product.html">Sản Phẩm</a>
+        <a href="about.html">Giới Thiệu</a>
+        <a href="contact.html">Liên Lạc</a>
+      </nav>
+      <div class="header__icons">
+        <div class="menu-btn fa-solid fa-bars"></div>
+        <a href="user.html" class="fa-solid fa-user"></a>
+        <a href="cart.html" class="fa-solid fa-cart-shopping"></a>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__top">
+        <div class="swiper banner__top--1">
+          <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide slider">
+              <a href="#">
+                <img src="./img/banner1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide slider">
+              <a href="#">
+                <img src="./img/banner2.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide slider">
+              <a href="#">
+                <img src="./img/banner3.png" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide slider">
+              <a href="#">
+                <img src="./img/banner4.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="banner__top--2">
+          <a href="#">
+            <img src="./img/banner5.jpg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./img/banner6.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="banner__bottom">
+        <a href="#">
+          <img src="./img/banner7.jpg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/banner8.jpg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/banner9.jpg" alt="" />
+        </a>
+        <a href="#">
+          <img src="./img/banner10.jpg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section class="product__hot">
+      <div class="heading">Sản Phẩm Nổi Bật</div>
+      <div class="swiper product__hot--slider">
+        <div class="swiper-wrapper wrapper">
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book1.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">345 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Cây Cam Ngọt Của Tôi</div>
+              <div class="author">Tác Giả : José Mauro de Vasconcelos</div>
+              <div class="current">
+                <span class="price">99,000đ</span>
+                <span class="discount">Giảm 10%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 45/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book2.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">20 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Quân Vương</div>
+              <div class="author">Tác Giả : Machiavelli</div>
+              <div class="current">
+                <span class="price">128,000đ</span>
+                <span class="discount">Giảm 8%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 5/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book3.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">345 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Vũ Trụ Trong Vở Hạt Dẻ</div>
+              <div class="author">Tác Giả : Stephen Hawking</div>
+              <div class="current">
+                <span class="price">59,000đ</span>
+                <span class="discount">Giảm 30%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 35/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book4.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">100 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Những Cuộc Phiêu Lưu Của SherLockHomes</div>
+              <div class="author">Tác Giả : Connan Doyle</div>
+              <div class="current">
+                <span class="price">29,000đ</span>
+                <span class="discount">Giảm 10%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 45/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book5.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">345 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Grammar For Ielts</div>
+              <div class="author">Tác Giả : Đại Học Cambridge</div>
+              <div class="current">
+                <span class="price">399,000đ</span>
+                <span class="discount">Giảm 10%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 45/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book6.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">2000 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Không Gia Đình</div>
+              <div class="author">Tác Giả : Hector Malot</div>
+              <div class="current">
+                <span class="price">66,000đ</span>
+                <span class="discount">Giảm 15%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 45/Sản Phẩm</div>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <div class="image">
+              <img src="./img/book7.jpg" alt="photo" />
+              <div class="hot">
+                <i class="fa-solid fa-money-bill-trend-up"></i>
+                <span>Sách Hot</span>
+              </div>
+              <div class="review">5 đã bán</div>
+            </div>
+            <div class="content">
+              <div class="title">Bố Già</div>
+              <div class="author">Tác Giả : Mario Puso</div>
+              <div class="current">
+                <span class="price">399,000đ</span>
+                <span class="discount">Giảm 20%</span>
+              </div>
+              <div class="add">
+                <i class="fa-solid fa-cart-plus"></i>
+                <span>Mua Hàng</span>
+              </div>
+              <div class="quantity">Còn lại : 45/Sản Phẩm</div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="btn__link">
+        <a href="product.html">Xem Thêm...</a>
+      </div>
+    </section>
+    <section class="product">
+      <div class="heading">Văn Học</div>
+      <div class="product-list">
+        <div class="product-menu active" data-menu="1">Nước Ngoài</div>
+        <div class="product-menu" data-menu="2">Trong Nước</div>
+        <div class="product-menu" data-menu="3">Hiện Đại</div>
+        <div class="product-menu" data-menu="4">Khởi Nghiệp</div>
+      </div>
+      <div class="product-wrapper">
+        <div class="banner">
+          <img src="./img/vanhoc.jpg" alt="" />
+        </div>
+        <div class="des">
+          <div class="product-container" data-menu="2">
+            <div class="product-items">
+              <div class="product-item">
+                <img src="./img/book10.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Số Đỏ</div>
+                  <div class="author">Tác Giả : Vũ Trọng Phụng</div>
+                  <div class="current">
+                    <span class="price">55,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book8.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Chí Phèo</div>
+                  <div class="author">Tác Giả : Nam Cao</div>
+                  <div class="current">
+                    <span class="price">78,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book9.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Đất Rừng Phương Nam</div>
+                  <div class="author">Tác Giả : Đoàn Giỏi</div>
+                  <div class="current">
+                    <span class="price">67,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book11.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Không Diệt Không Sinh Đừng Sợ Hãi</div>
+                  <div class="author">Tác Giả : Thích Nhất Hạnh</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-container active" data-menu="1">
+            <div class="product-items">
+              <div class="product-item">
+                <img src="./img/book6.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Không Gia Đình</div>
+                  <div class="author">Tác Giả : Hector Malot</div>
+                  <div class="current">
+                    <span class="price">199,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book1.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Cây Cam Ngọt Của Tôi</div>
+                  <div class="author">Tác Giả : José Mauro de Vasconcelos</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book7.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Bố Già</div>
+                  <div class="author">Tác Giả : Mario Puzo</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book2.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Quân Vương</div>
+                  <div class="author">Tác Giả : Machiavelli</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-container" data-menu="3">
+            <div class="product-items">
+              <div class="product-item">
+                <img src="./img/book13.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Túp Liều Bác Tôm</div>
+                  <div class="author">Tác Giả :Harriet Beecher Stowe</div>
+                  <div class="current">
+                    <span class="price">60,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book12.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Ông Già Và Biển Cả</div>
+                  <div class="author">Tác Giả :Ernest Hemingway</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book14.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Cuốn Theo Chiều Gió</div>
+                  <div class="author">Tác Giả : Margaret Mitchell</div>
+                  <div class="current">
+                    <span class="price">99,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book15.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Ba Chàng Lính Ngự Lâm</div>
+                  <div class="author">Tác Giả : Alexandre Dumas</div>
+                  <div class="current">
+                    <span class="price">299,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-container" data-menu="4">
+            <div class="product-items">
+              <div class="product-item">
+                <img src="./img/book16.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Content Marketing Trong Kỷ Nguyên 4.0</div>
+                  <div class="author">Tác Giả : Alexander Jutkowitz</div>
+                  <div class="current">
+                    <span class="price">157,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book17.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">
+                    Dịch Chuyển Từ Truyền Thông Sang Công Nghệ Số
+                  </div>
+                  <div class="author">
+                    Tác Giả : Philip Kotler, Hermawan Kartaj
+                  </div>
+                  <div class="current">
+                    <span class="price">106,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book18.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Người Giàu Có Nhất Thành Babylon</div>
+                  <div class="author">Tác Giả : George S Clason</div>
+                  <div class="current">
+                    <span class="price">88,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item">
+                <img src="./img/book19.jpg" alt="" class="product-image" />
+                <div class="product-content">
+                  <div class="title">Chiến Tranh Tiền Tệ</div>
+                  <div class="author">Tác Giả : Song Hong Bing</div>
+                  <div class="current">
+                    <span class="price">189,000đ</span>
+                    <span class="discount">Giảm 10%</span>
+                  </div>
+                  <div class="add">
+                    <i class="fa-solid fa-cart-plus"></i>
+                    <span>Mua Hàng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn__link">
+        <a href="product.html">Xem Thêm...</a>
+      </div>
+    </section>
+    <section class="publisher">
+      <div class="publisher__list swiper">
+        <div class="wrapper swiper-wrapper">
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb1.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb2.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb3.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb4.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb5.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb6.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb7.jpg" alt=""
+          /></a>
+          <a class="swiper-slide" href="#"
+            ><img src="./img/nxb8.png" alt=""
+          /></a>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__col">
+        <a href="index.html" class="footer__col--logo"
+          ><i class="fa-solid fa-store"></i> BookStore</a
+        >
+        <p>
+          <strong>Địa Chỉ: </strong>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM
+          Công Ty Cổ Phần Phát Hành Sách TP HCM - 62 Lê Lợi, Quận 1, TP. HCM,
+          Việt Nam
+        </p>
+        <p><strong>Số Điện Thoại: </strong>0376637529</p>
+        <p>
+          <strong>Giờ Làm Việc: </strong>8:20 - 17:50 Tất Cả Ngày Trong Tuần
+          (Trừ Chủ Nhật)
+        </p>
+        <div class="footer__col--follow">
+          <div class="footer__col--title">Follows us</div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col--title">Dịch Vụ</div>
+        <a href="#">Điều Khoản Sử Dụng</a>
+        <a href="#">Chính sách bảo mật thông tin cá nhân</a>
+        <a href="#">Chính sách bảo mật thanh toán</a>
+        <a href="#">Giới thiệu chúng tôi</a>
+        <a href="#">Hệ thống nhà sách</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col--title">Hổ Trợ</div>
+        <a href="#">Chính sách đổi trả hoàn tiền</a>
+        <a href="#">Chính sách bồi hoàn bảo hành</a>
+        <a href="#">Chính sách vận chuyển</a>
+        <a href="#">Chính sách khách sĩ</a>
+        <a href="#">Phương thức thanh toán</a>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col--title">Install App</div>
+        <div class="row">
+          <img src="./img/appStore.png" alt="" />
+          <img src="./img/googleplay.png" alt="" />
+        </div>
+        <div class="row">
+          <img src="./img/momo.png" alt="" />
+          <img src="./img/shoppepay.png" alt="" />
+          <img src="./img/zalopay.png" alt="" />
+          <img src="./img/shoppepay.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
